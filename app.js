@@ -4,7 +4,7 @@ const cors = require('cors');
 const axios = require('axios');
 
 app.use(cors({
-    origin: 'https://did-i-liked-it-git-main-julio-paivas-projects.vercel.app/',
+    origin: 'http://localhost:3000',
     methods: ['GET'],
 }));
 
@@ -20,6 +20,6 @@ app.get('/search/album', (req, res) => {
     });
 });
 
-app.listen(3000, () => {
-    console.log('listening on port 3000')
+app.listen(3030, () => {
+    console.log('listening on port 3030')
 })
